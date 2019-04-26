@@ -1,0 +1,153 @@
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\csc.exe
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\System.Collections.Immutable.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\System.Reflection.Metadata.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\vbc.exe
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\VBCSCompiler.exe
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\roslyn\VBCSCompiler.exe.config
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\EmptyASP.dll.config
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\EmptyASP.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\EmptyASP.pdb
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\EntityFramework.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\EntityFramework.SqlServer.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\Microsoft.Web.Infrastructure.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Helpers.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Mvc.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Razor.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Webpages.Deployment.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Webpages.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Webpages.Razor.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\EntityFramework.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\EntityFramework.SqlServer.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Razor.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Webpages.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Webpages.Deployment.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Webpages.Razor.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Helpers.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\bin\System.Web.Mvc.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.csprojResolveAssemblyReference.cache
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel1.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel2.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel3.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel4.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel5.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel6.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel7.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel8.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel9.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel10.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel11.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.csproj.GenerateResource.Cache
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 8\EmptyASP\EmptyASP\obj\Debug\EmptyASP.pdb
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\csc.exe
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\vbc.exe
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\VBCSCompiler.exe
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\EmptyASP.dll.config
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\EmptyASP.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\EmptyASP.pdb
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\EntityFramework.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\EntityFramework.SqlServer.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Helpers.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Mvc.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Razor.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Webpages.Deployment.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Webpages.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Webpages.Razor.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\EntityFramework.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\EntityFramework.SqlServer.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Razor.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Webpages.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Webpages.Deployment.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Webpages.Razor.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Helpers.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\bin\System.Web.Mvc.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.csprojResolveAssemblyReference.cache
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel1.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel2.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel3.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel4.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel5.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel6.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel7.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel8.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel9.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel10.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel11.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.csproj.GenerateResource.Cache
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Git\MVC_WebApplication\EmptyASP\EmptyASP\obj\Debug\EmptyASP.pdb
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\csc.exe
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\System.Collections.Immutable.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\System.Reflection.Metadata.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\vbc.exe
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\VBCSCompiler.exe
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\roslyn\VBCSCompiler.exe.config
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\EmptyASP.dll.config
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\EmptyASP.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\EmptyASP.pdb
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\EntityFramework.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\EntityFramework.SqlServer.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\Microsoft.Web.Infrastructure.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\Newtonsoft.Json.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Linq.Dynamic.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Net.Http.Formatting.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Helpers.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Mvc.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Razor.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Webpages.Deployment.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Webpages.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Webpages.Razor.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\EntityFramework.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\EntityFramework.SqlServer.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\Newtonsoft.Json.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Net.Http.Formatting.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Razor.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Webpages.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Webpages.Deployment.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Webpages.Razor.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Helpers.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\bin\System.Web.Mvc.xml
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.csprojResolveAssemblyReference.cache
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel1.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel2.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel3.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel4.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel5.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel6.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodelTabel7.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel8.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel9.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel10.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingModelTabel11.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.Migrations.addingmodeltabel15.resources
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.csproj.GenerateResource.Cache
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.dll
+F:\Melati A. Sitorus\Metrodata\Bootcamp\Minggu 6\MVC_WebApplication-master\EmptyASP\EmptyASP\obj\Debug\EmptyASP.pdb

@@ -1,0 +1,81 @@
+﻿@model EmptyASP.Models.Supplier
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+@*<h3>Are you sure you want to delete this?</h3>*@
+<div>
+    <h4>Supplier</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" onclick="Delete" value="Delete" class="btn btn-default"/> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+@*Pakai ini*@
+<link rel="stylesheet" href="~/Content/sweetalert/sweet-alert.css" />
+<script src="~/Scripts/sweetalert.js"></script>
+@*atau ini*@
+<link rel="stylesheet" href="https://lipis.github.io/bootstrap-sweetalert/dist/sweetalert.css">
+<script src="https://lipis.github.io/bootstrap-sweetalert/dist/sweetalert.js"></script>
+
+@*<script type="text/javascript">
+        function Delete(id) {
+            debugger;
+            swal({
+                title: "Are you sure?",
+                text: "Are you sure that you want to delete this Order?",
+                type: "warning",
+                showCancelButton: true,
+                closeOnConfirm: false,
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "Delete",
+                confirmButtonColor: "#ec6c62"
+            },
+                function () {
+                    $.ajax({
+                        url: "/Supplier/delete/",
+                        data: { "Id": id }
+                        //type: "DELETE"
+                    })
+                   .done(function (data) {
+                       sweetAlert
+                              ({
+                                  title: "Deleted!",
+                                  text: "Your file was successfully deleted!"
+                                   //type: "success"
+                               },
+                       function ()
+                       {
+                           window.location.href = '/Supplier/Delete';
+                       });
+                    })
+                    .error(function (data)
+                    {
+                        swal("Oops", "We couldn't connect to the server!", "error");
+                    });
+                });
+        }
+</script>*@

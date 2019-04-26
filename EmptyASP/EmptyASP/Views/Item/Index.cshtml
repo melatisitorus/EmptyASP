@@ -1,0 +1,267 @@
+﻿@model IEnumerable<EmptyASP.ViewModels.ItemVM>
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdministrator.cshtml";
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<body>
+    <div class="container-fluid">
+        <hr />
+       <button type="button" class="btn btn-primary"
+                data-toggle="modal" data-target="#myModal" onclick="return ClearScreen();">
+            Create New
+        </button><br /><br />
+        <table class="table table-hover" id="table">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Stock
+                    </th>
+                    <th>
+                        Supplier Name
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.stock)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Suppliers_Id)
+                    </td>
+                    <td>
+                        @*@Html.ActionLink("Edit", "Edit", new { id = item.Id })*@
+                        @*<a href="#" onclick="return GetById(@item.Id)">Edit</a> |*@
+                        <button type="button" class="btn btn-danger" onclick="Get(@item.Id)">Edit</button>
+                        @*<a href="#" onclick="return Delete(@item.Id)">Delete</a>*@
+                        <button id="deleting" class="btn btn-danger" onclick="Deleting(@item.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Item Form</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Id">Id</label>
+                            <input type="text" class="form-control" id="Id" placeholder="Id" disabled="disabled" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Price">Price</label>
+                            <input type="number" class="form-control" id="Price" placeholder="Price" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Stock">Stock</label>
+                            <input type="number" class="form-control" id="Stock" placeholder="Stock" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Suppliers_Id" >Supplier</label>
+                            <select id="Suppliers_Id" class="pc form-control">
+                                <option>Select Supplier</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="Save" onclick="Save();">Add</button>
+                    <button type="button" class="btn btn-primary" id="Update" style="display:none;" onclick="Edit();">Update</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Content/sweetalert/sweetalert.js"></script>
+<link href="~/Content/sweetalert/sweetalert.css" rel="stylesheet" />
+<script src="~/Content/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+<link href="~/Content/DataTables-1.10.18/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+
+<script>
+    var Suppliers = []
+    function LoadSupplier(element) {
+        debugger;
+        if (Suppliers.length == 0) {
+            $.ajax({
+                type: "GET",
+                url: "/Supplier/LoadSupplier",
+                success: function (data) {
+                    console.log(data);
+                    Supplier = data;
+                    renderSupplier(element);
+                }
+            })
+        }
+        else {
+            renderSupplier(element);
+        }
+    }
+
+    function renderSupplier(element) {
+        var $ele = $(element);
+        $ele.empty();
+        $ele.append($('<option/>').val('0').text('Select Suppliers'));
+        $.each(Supplier, function (i, val) {
+            $ele.append($('<option/>').val(val.Id).text(val.Name));
+        })
+    }
+
+    LoadSupplier($('#Suppliers_Id'));
+
+    function ClearScreen()
+    {
+        $('#Id').val('');
+        $('#Name').val('');
+        $('#Price').val('');
+        $('#tock').val('');
+        $('#Suppliers_Id').val(0);
+
+        $('#Update').hide('');
+        $('#Save').show('');
+    }
+
+    function Save() {
+        var item = new Object();
+        item.Name = $('#Name').val();
+        item.price = $('#Price').val();
+        item.stock = $('#Stock').val();
+        item.Suppliers_Id = $('#Suppliers_Id').val();
+        $.ajax({
+            url: "/Item/Insert",  //Merupakan nama controller dan nama view
+            type: 'post',
+            data: item,
+            success: function (response) {
+                swal({
+                    title: "Insert",
+                    text: "That data has been insert!",
+                    type: "success"
+                },
+                function () {
+                    window.location.href = '/Item/Index/';
+                });
+                $('#myModal').modal('hide');
+                ClearScreen();
+                //alert('SUCCESS');
+            },
+            error: function (response) {
+                swal("Oops", "We couldn't connect to the server!", "error");
+            }
+        });
+    }
+
+    function Deleting(Id) {
+        swal({
+            title: "Are you sure?",
+            text: "You will not be able to recover this imaginary file!",
+            type: "warning",
+            showCancelButton: true,
+            closeOnConfirm: false,
+            //confirmButtonClass: "btn-danger",
+            confirmButtonText: "Delete",
+            confirmButtonColor: "#ec6c62"
+        },
+                function () {
+                    $.ajax({
+                        url: "/Item/Delete/",  //Merupakan nama controller dan nama view
+                        data: { id : Id // sebelah kiri adalah penampung dan sebelah kanan pemberi
+                    },
+                        success: function (response) {
+                        swal ({
+                            title : "Deleted",
+                            text : "That data has been soft delete!",
+                            type : "success"
+                        },
+                        function () {
+                            window.location.href = '/Item/Index/';
+                        });
+                    },
+                    error: function (response) {
+                        swal("Oops", "We couldn't connect to the server!", "error");
+                    }
+                        });
+                    });
+    }
+
+    function Get(Id) {
+        $('#myModal').modal('show');
+        $.ajax({
+            url: "/Item/Get/"+Id,  //Merupakan nama controller dan nama view
+            type : 'Get',
+            dataType: 'Json',
+            data :{ id:Id},
+            success: function (data) {
+                $('#Id').val(data.Id);
+                $('#Name').val(data.Name);
+                $('#Price').val(data.price);
+                $('#Stock').val(data.stock);
+                $('#Suppliers_Id').val(data.Suppliers_Id);
+                $('#myModal').modal('hide');
+                $('#Update').show('');
+                $('#Save').hide('');
+            }
+        });
+    }
+
+    function Edit() {
+        var itemVM = new Object();
+        item.Name = $('#Name').val();
+        item.price = $('#Price').val();
+        item.stock = $('#Stock').val();
+        item.Suppliers_Id = $('#Suppliers_Id').val();
+        $.ajax({
+            url: "/Item/Edit",  //Merupakan nama controller dan nama view
+            data: itemVM,
+            success: function (response) {
+                swal({
+                    title: "Update",
+                    text: "That data has been update!",
+                    type: "success"
+                },
+                function () {
+                    window.location.href = '/Item/Index/';
+                });
+                $('#myModal').modal('hide');
+                ClearScreen();
+                //alert('SUCCESS');
+            },
+            error: function (response) {
+                swal("Oops", "We couldn't connect to the server!", "error");
+            }
+        });
+    }
+
+</script>

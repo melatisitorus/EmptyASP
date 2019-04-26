@@ -1,0 +1,151 @@
+﻿@model EmptyASP.ViewModels.SupplierVM
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdministrator.cshtml";
+    ViewBag.Title = "Create";
+    //ViewBag.Message = "sadasd";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Supplier</h4>
+
+        <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", id = "Name" } })
+                    @*@Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger", id = "Name" })*@
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    
+                    <input type="submit" value="Create" class="btn btn-default" 
+                          @*onclick="return validateData();"*@ 
+                            id = "Create"  
+                        @*onclick = "Validate(this, event);"*@/>
+                </div>
+            </div>
+        </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+   
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+@*Pakai ini*@
+@*<link rel="stylesheet" href="~/Content/sweetalert/sweet-alert.css" />
+<script src="~/Scripts/sweetalert.js"></script>
+
+@*atau ini*@
+<link rel="stylesheet" href="https://lipis.github.io/bootstrap-sweetalert/dist/sweetalert.css">
+<script src="https://lipis.github.io/bootstrap-sweetalert/dist/sweetalert.js"></script>
+
+@*atau ini (pilih satu)
+<link rel="stylesheet" href="~/scripts/sweetalert2.css" />
+<script src="~/scripts/sweetalert2.js"></script>*@
+
+
+@if (ViewBag.Message != null)
+{
+<script>
+    window.onload = function() {
+        @*swal.fire('@ViewBag.Message', "asdadasdas", "error"); // pakai ini jika menggunakan sweetalert2*@
+        swal('@ViewBag.Message', "asdadasdas", "error"); // pakai ini jika menggunakan sweetalert atau lipis.github
+    };
+</script>
+}
+
+@*<script>
+        function validateData() {
+            if ($("#Name").val() == "") {
+                swal("Please enter Name !");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function Validate(ctl, event) {
+            event.preventDefault();
+            swal({
+                title: "Do you want to save it?",
+                text: "Please check Information before Submiting!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Save",
+                cancelButtonText: "Cancel",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            },
+                function (isConfirm) {
+                    if (isConfirm) {
+                        if (validateData() == true) {
+                            $("#CreateForm").submit();
+                        }
+                    } else {
+                        swal("Cancelled", "You have Cancelled Form Submission!", "error");
+                    }
+                });
+        }
+</script>*@
+
+<script>
+    $('#Create').click(function (e) {
+        if ($('#Name').val() == "") {
+            sweetAlert("Field Shouldn't Be Empty!!", "Please Input Your Name", "error");
+            //alert("File Shouldn't Be Empty!!");
+            return false;
+        }
+        else {
+            //sweetAlert("Congratulations!!", "Thank You", "success"),
+            //function () {
+            debugger;
+            var Item = new Object();
+            Item.Name = $('#Name').val();
+            $.ajax({
+                url: "/Supplier/Create/",  //Merupakan nama controller dan nama view
+                type: 'post',
+                data: {
+                    supplierVM: Item
+                }, // sebelah kiri adalah penampung dan sebelah kanan pemberi
+                success: function (response) {
+                    swal({
+                        title: "Insert",
+                        text: "That data has been insert!",
+                        type: "success"
+                    },
+                    function () {
+                        window.location.href = '/Supplier/Index/';
+                    });
+                    //alert('SUCCESS');
+                },
+                error: function (response) {
+                    swal("Oops", "We couldn't connect to the server!", "error");
+                }
+            });
+            return false;
+        }
+    });
+</script>
+
+<script src="~/Scripts/Validation/SupplierValidate.js"></script>
+<script src="~/Content/sweetalert/sweetalert.min.js"></script>
+@*<script src="~/Content/sweetalert/sweetalert.js"></script>*@
+<link href="~/Content/sweetalert/sweetalert.css" rel="stylesheet" />

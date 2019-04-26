@@ -1,0 +1,260 @@
+﻿@model IEnumerable<EmptyASP.ViewModels.SupplierVM>
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdministrator.cshtml";
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<body>
+    <div class="container-fluid">
+        <hr />
+        <button type="button" class="btn btn-primary"
+                data-toggle="modal" data-target="#myModal" onclick="return ClearScreen();"> Create New</button><br /><br />
+        <table class="table table-hover" id="table">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @*//modelItem merupakan default//*@
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @*//action link route value merupakan melemparkan nilai yang akan ditampilkan datanya dengan mengambil Id dan
+                            yang kita butuhkan hanya ID nya saja sehingga mendapatkan data dan bisa di update //
+                            //linktext yag nampil di view page //
+                            //*@
+                        @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |*@
+                        <button type="button" class="btn btn-danger" onclick="Get(@item.Id)">Edit</button>
+                        @*@Html.ActionLink("Details", "Details", new { id = item.Id })*@  
+                        @*<button id="Get" class="btn btn-danger" onclick="Get(@item.Id)">Details</button>*@
+                        @*@Html.ActionLink("Delete", null, new { id = item.Id }, new {onclick="Deleting(item.Id);"})*@
+                        <button id="deleting" class="btn btn-danger" onclick="Deleting(@item.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dissmiss="modal">x</button>
+                     <h4 class="modal-title" id="myModalLabel">Supplier Form</h4>
+                 </div>
+             <div class="modal-body">
+                 <form>
+                     <div class="form-group">
+                         <label for="Id">Id</label>
+                         <input type="text" class="form-control" id="Id" placeholder="Id" disabled="disabled" />
+                     </div>
+                     <div class="form-group">
+                         <label for="Name">Name</label>
+                         <input type="text" class="form-control" id="Name" placeholder="Name" />
+                     </div>
+                 </form>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-primary" id="Save" onclick="Save();">Add</button>
+                 <button type="button" class="btn btn-primary" id="Update" style="display:none;" onclick="Edit();">Update</button>
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+          </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function ClearScreen()
+    {
+        $('#Id').val('');
+        $('#Name').val('');
+
+        $('#Update').hide('');
+        $('#Save').show('');
+    }
+
+
+// Sudah dapat digunakan //
+    function Save() {
+        var supplier = new Object();
+        supplier.Name = $('#Name').val();
+        $.ajax({
+            url: "/Supplier/Insert",  //Merupakan nama controller dan nama view
+            type: 'post',
+            data: supplier,
+            success: function (response) {
+                swal({
+                    title: "Insert",
+                    text: "That data has been insert!",
+                    type: "success"
+                },
+                function () {
+                    window.location.href = '/Supplier/Index/';
+                });
+                $('#myModal').modal('hide');
+                ClearScreen();
+                //alert('SUCCESS');
+            },
+            error: function (response) {
+                swal("Oops", "We couldn't connect to the server!", "error");
+            }
+        });
+    }
+
+//Sudah dapat digunakan //
+    function Deleting(Id) {
+        swal({
+            title: "Are you sure?",
+            text: "You will not be able to recover this imaginary file!",
+            type: "warning",
+            showCancelButton: true,
+            closeOnConfirm: false,
+            //confirmButtonClass: "btn-danger",
+            confirmButtonText: "Delete",
+            confirmButtonColor: "#ec6c62"
+        },
+                function () {
+                    $.ajax({
+                        url: "/Supplier/Delete/",  //Merupakan nama controller dan nama view
+                        data: {
+                            id: Id // sebelah kiri adalah penampung dan sebelah kanan pemberi 
+                        },
+                        success: function (response) {
+                            swal({
+                                title: "Deleted",
+                                text: "That data has been soft delete!",
+                                type: "success"
+                            },
+                            function () {
+                                window.location.href = '/Supplier/Index/';
+                            });
+                        },
+                        error: function (response) {
+                            swal("Oops", "We couldn't connect to the server!", "error");
+                        }
+                    });
+                });
+    }
+
+// Sudah dapat digunakan 
+    function Get(Id) {
+        $('#myModal').modal('show');
+        $.ajax({
+            url: "/Supplier/Get/"+Id,  //Merupakan nama controller dan nama view
+            type : 'Get',
+            dataType: 'Json',
+            data :{ id:Id},
+            success: function (data) {
+                $('#Id').val(data.Id);
+                $('#Name').val(data.Name);
+                $('#myModal').modal('hide');
+                $('#Update').show('');
+                $('#Save').hide('');
+            }
+        });
+    }
+
+
+    function Edit() {
+        var supplierVM = new Object();
+        supplierVM.Id = $('#Id').val();
+        supplierVM.Name = $('#Name').val();
+        $.ajax({
+            url: "/Supplier/Edit",  //Merupakan nama controller dan nama view
+            data: supplierVM,
+            success: function (response) {
+                swal({
+                    title: "Update",
+                    text: "That data has been update!",
+                    type: "success"
+                },
+                function () {
+                    window.location.href = '/Supplier/Index/';
+                });
+                $('#myModal').modal('hide');
+                ClearScreen();
+                //alert('SUCCESS');
+            },
+            error: function (response) {
+                swal("Oops", "We couldn't connect to the server!", "error");
+            }
+        });
+    }
+
+</script>
+
+<script src="~/Content/sweetalert/sweetalert.js"></script>
+<link href="~/Content/sweetalert/sweetalert.css" rel="stylesheet" />
+@*<link href="~/Content/DataTables-1.10.18/css/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="~/Content/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>*@
+
+@*<script>
+    $(document).ready(function () {
+        $('#SupplierTable').dataTable({
+            "processing": true, // for show progress bar  
+            "serverSide": true, // for process server side  
+            "filter": true, // this is for disable filter (search box)  
+            "orderMulti": false, // for disable multiple column at once  
+            "pageLength": 5,
+            "ajax": {
+                url: "/Supplier/Index",
+                type: "POST",
+                datatype: "json"
+            },
+            "columnsDefs":  [
+                    { data: "Name", "autoWidth": true }
+            ]
+        });
+        });
+</script>*@
+
+@*<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css" />*@
+@*<script>
+    $(document).ready(function(){
+        $("#SupplierTable").DataTable({
+            //var table = $("#SupplierTable").DataTable({
+            "processing":true,
+            "serverSide": true,
+            "filter": true,
+            "orderMulti": false,
+            "pageLength":5,
+            "ajax":{
+                "url": "/Supplier/LoadData/",
+                "type": "POST",
+                "dataType": "json"
+            },
+            "columnDefs":[{
+                "targets":[0],
+                "visible": false,
+                "searchable": false
+            }],
+            "columns":[
+                { "data" : "Id", "name": "Id", "autowidth": true},
+                { "data" : "Name", "name": "Name", "autowidth": true},
+                { "data": "Id",
+                    "render": function(data, type, row) {
+                        var btn = '<a class="btn btn-info edit"> Edit</a>'
+                        + '<a class="btn btn-danger delete">Delete</a>';
+                        return btn;
+                        ;
+                    }
+                }
+            ]
+        });
+    });
+</script>*@
+
